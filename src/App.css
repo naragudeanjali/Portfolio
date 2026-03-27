@@ -4,6 +4,11 @@ body {
   background: #020617;
   color: white;
 }
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* 🔥 FIX SCROLL ISSUE */
+}
 
 /* NAVBAR */
 .nav {
@@ -24,6 +29,7 @@ body {
 .menu-icon {
   display: none;
 }
+
 
 /* HERO */
 .hero {
@@ -212,4 +218,14 @@ section {
 
 .social-links a:hover {
   text-decoration: underline;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* 🔥 MAIN FIX */
 }

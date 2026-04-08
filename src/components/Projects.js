@@ -1,34 +1,49 @@
 import React from "react";
 
-function Projects() {
+const Projects = () => {
   return (
-    <section>
+    <div style={{ padding: "20px" }}>
       <h2>Projects</h2>
 
-      <div>
-        <h3>Cloud-Based DevOps Automation</h3>
+      {/* CXP Portal */}
+      <div style={{ marginBottom: "20px" }}>
+        <h3>CXP Portal | Client: Cisco | Role: DevOps Engineer</h3>
+        <p>
+          Migrated application from on-premise to Kubernetes-based AWS architecture
+          for scalability, reliability, and performance.
+        </p>
         <ul>
-          <li>Built complete CI/CD pipeline from code commit to production</li>
-          <li>Provisioned AWS infrastructure using Terraform (S3 backend)</li>
-          <li>Deployed microservices on Kubernetes</li>
-          <li>Implemented rolling & blue-green deployments</li>
-          <li>Improved deployment speed by 40%</li>
+          <li>Built CI/CD pipelines using Jenkins</li>
+          <li>Containerized applications using Docker</li>
+          <li>Deployed applications on Kubernetes (EKS)</li>
+          <li>Automated deployments using Ansible</li>
+          <li>Provisioned infrastructure using Terraform</li>
+          <li>Used AWS services (S3, IAM, CloudFront, Aurora)</li>
+          <li>Implemented monitoring using Prometheus & Grafana</li>
+          <li>Resolved production issues</li>
         </ul>
       </div>
 
+      {/* Novartis Project */}
       <div>
-        <h3>CI/CD for Java Application</h3>
+        <h3>Novartis Healthcare | Client: Novartis | Role: DevOps Engineer</h3>
+        <p>
+          Worked on CI/CD automation, code quality, and AWS deployments for
+          healthcare applications.
+        </p>
         <ul>
-          <li>Developed Jenkins pipelines for automation</li>
-          <li>Used Ansible for configuration management</li>
-          <li>Managed Git branching & merging</li>
-          <li>Dockerized applications</li>
-          <li>Supported dev, test, production environments</li>
+          <li>Managed Git branching and merging</li>
+          <li>Built artifacts using Maven</li>
+          <li>Implemented CI pipelines in Jenkins</li>
+          <li>Integrated SonarQube and Nexus</li>
+          <li>Deployed applications on AWS (EC2, S3, RDS)</li>
+          <li>Managed IAM, VPC, CloudWatch</li>
+          <li>Handled multi-environment deployments</li>
+          <li>Troubleshot build and application issues</li>
         </ul>
       </div>
-
-    </section>
+    </div>
   );
-}
+};
 
 export default Projects;
